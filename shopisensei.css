@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #E3E6F3;
+}
+#header img{
+    margin-left: 10px;
+    border-radius: 50px;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+
+}
+#navbar li a:hover{
+    color: rgb(248, 178, 190);
+}
+#product1{
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    background: black;
+}
+#product1 .pro{
+    width: 20%;
+    min-width: 250px;
+    padding: 10px 20px;
+    border: 1px solid aliceblue;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.2s ease;
+    position: relative;
+    margin: 10px 0;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 0px rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+    height: 300px;
+}
+
+/* .pro img:hover {
+    transform: scale(1.05);
+} */
+
+#product1 .pro .description{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .description span{
+    color: gray;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+}
+#product1 .pro .description i{
+    color: yellow;
+}
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    color: #088178;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+.added-message {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none; /* Initially hidden */
+}
+
+.pro h4 {
+    color: grey;
+}
+
+#product1 h1 {
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+}
+
+@media screen and (max-width: 768px) {
+    
+  
+    #header {
+      flex-direction: column; 
+      text-align: center; 
+    }
+  
+    #navbar {
+      flex-direction: column; 
+    }
+  
+    #navbar li {
+      padding: 10px 0; 
+      text-align: center; 
+    }
+  
+    #product1 .pro {
+      width: 45%; 
+      min-width: auto; 
+    }
+    
+    #product1 h1 {
+      font-size: 24px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #product1 .pro-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      padding: 10px; 
+      background: black; 
+    }
+  
+    #product1 .pro {
+      width: 75%; 
+      margin-bottom: 10px; 
+    }
+  }
+  
+  
